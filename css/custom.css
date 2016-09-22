@@ -1,0 +1,267 @@
+.fl
+{
+	float: left;
+}
+.container
+{
+	margin:0 auto;
+}
+.blue-text
+{
+	color:#00b0de;
+}
+.border-l
+{
+	border-left: 1px solid #999; 
+}
+.border-t
+{
+	border-top:1px solid #999;
+}
+.center-text
+{
+	text-align: center;
+	margin-bottom:15px;
+}
+body
+{
+	background-color:#eaedf1 ;
+}
+.Hui-aside
+{
+	background-color: #222
+}
+.Hui-aside .menu_dropdown dt
+{
+	background-color: transparent;
+	color:#fff;
+	border: none;
+}
+.Hui-aside .menu_dropdown dd
+{
+	background-color: #333;
+	color:#fff;
+}
+.Hui-aside .menu_dropdown li a:hover
+{
+	color: #148cf1;
+    background-color: transparent;
+}
+.Hui-aside .menu_dropdown li a
+{
+	color:#fff;
+}
+/* 欢迎页样式 */
+.welcome-container
+{
+	margin-top:100px;
+	width: 750px;
+}
+.user-area
+{
+	width: 180px;
+	height: 150px;
+	background-color: #f7f7f7;
+	padding-top:30px;
+}
+.user-image img
+{
+	margin:0 auto;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.welcome-info
+{
+	text-align: center;	
+}
+
+.user-mission
+{
+	background-color: #fff;
+	width: 285px;
+	height:180px;
+}
+.mission-part
+{
+	padding-top:20px;
+	width: 95px;
+}
+div.double-border
+{
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+.user-article
+{
+	background-color: #fff;
+	border-left: 1px solid #EAEDF1;
+}
+.user-article .mission-part
+{
+	height: 160px;
+}
+.mission-part .border-left
+{
+	border-left:1px solid #999;
+}
+
+/* 监控管理页面样式 */
+.collection-container
+{
+	margin-top: 100px;
+	width: 275px;
+}
+.collection-area .mission-part
+{
+	width: 275px;
+	height: 170px;
+	padding-top:10px;
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.collection-area .mission-part-top
+{
+	font-weight: 700;
+	border-bottom: 1px solid #999;
+	text-align: left;
+}
+.collection-area a
+{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-left: 10px;
+	padding-top:10px;
+	color:#fff;
+	background-color: #00B0DE;
+	text-align: center;
+}
+.collection-area a:hover
+{
+	text-decoration: none;
+	background-color: #EAEDF1;
+	color:#999;
+}
+
+/* 文章详情页样式 */
+
+.article-area textarea
+{
+	margin:10px 0;
+	width: 90%;
+	height: 430px;
+	padding:10px 10px;
+	resize:none;
+}
+.comments
+{
+	width:90%;
+	height:410px;
+	border:1px solid #999;
+	padding:20px 20px;
+	overflow: scroll;
+	margin:10px 0px;
+}
+.comments .comment-name-div
+{
+	padding-right: 200px;
+}
+.comments .comment-name
+{
+	padding-bottom: 5px;
+	font-size: 16px;
+	color:#999;
+	margin:5px 0;
+	border-bottom: 1px solid #999;
+}
+.comments .comment-content
+{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #999;
+}
+
+/* 我的关键词页面my-topic.html 样式 */
+.topic-area
+{
+	background-color:#fff;
+	/* border-left: 1px solid #999; */
+	padding:20px 20px; 
+	height:400px;
+}
+.topic-industry-area p
+{
+	margin:10px 10px;
+}
+.topic-area .topic-search-area
+{
+	
+	margin:10px auto;
+}
+.topic-area .topic-search-area input
+{
+	width: 70%;
+}
+.topic-industry-area a.selected
+{
+	background-color:  #5A98DE;
+	color:#fff;
+	-moz-border-radius: 5px;     
+	-webkit-border-radius: 5px;   
+	border-radius:5px;            
+}
+.topic-industry-area a
+{
+	display: inline-block;
+	margin:10px 5px;
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	color:#333;
+	text-align: center;
+	
+}
+.topic-industry-area a:hover
+{
+	text-decoration: none;
+}
+.topic-industry-area p
+{
+	font-size: 16px;
+	color:#5A98DE;
+}
+/* 关键词分析页面my-subject.html 样式*/
+.subjects-area
+{
+	width: 400px;
+	margin:0 auto;
+	background-color: #fff;
+}
+..subjects-area .mission-part
+{
+	width: 400px;
+}
+.my-subjects .Hui-tags
+{
+	width: 380px;
+	border:none;
+}
+.my-subjects span
+{
+	padding:5px 0;
+	text-align: center;
+	color:#5A98DE;
+	display: inline-block;
+	width:80px;
+	height: 20px;
+	border:1px solid #dedede;
+	margin:5px 5px;
+}
+.my-subjects input
+{
+	padding-left: 5px;
+	border: 1px solid #5A98DE;
+
+}
