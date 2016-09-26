@@ -24,7 +24,7 @@ $(function()
 			});*/
 		} else 
 		{
-			alert('welcome '+sessionStorage.userName+" !");
+			//alert('welcome '+sessionStorage.userName+" !");
 		}
 	}
 });

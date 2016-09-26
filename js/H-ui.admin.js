@@ -161,23 +161,26 @@ function layer_show(title,url,w,h){
 /*关闭弹出框口*/
 var index = parent.layer.getFrameIndex(window.name);
 function layer_close(){
+	console.log('refresh');
+	parent.location.reload();
 	parent.layer.close(index);
+
 }
 function Tab_or_layer()
 	{
 	
-		console.log("sss");
+		/*console.log("sss");
       	try
       	{
       		console.log('ssss');
       		Hui_admin_tab(this);
       		console.log('ssss_d');
       	} catch (e)
-      	{
+      	{*/
       		
       		console.log('sssss')
       		var _href = $(this).attr('_href');
-      		var _title = $(this).attr('title');
+      		var _title = $(this).attr('data-title');
       		var index = layer.open(
       		{
       			type:2,
@@ -185,7 +188,7 @@ function Tab_or_layer()
       			content: _href,
       		});
       		layer.full(index);	
-      	}
+      	//}
 	}
 $(function(){
 	getskincookie();
@@ -217,11 +220,15 @@ $(function(){
 	});
 	/*欢迎页点击待发布显示标签页*/
 	
-	$(document).on("click","#min_title_list li",function(){
+	$(document).on("click","#min_title_list li",function()
+	{
 		var bStopIndex=$(this).index();
 		var iframe_box=$("#iframe_box");
 		$("#min_title_list li").removeClass("active").eq(bStopIndex).addClass("active");
 		iframe_box.find(".show_iframe").hide().eq(bStopIndex).show();
+		var iframe_visible = iframe_box.find(".show_iframe:visible").find('iframe');
+		iframe_visible.attr('src',iframe_visible.attr('src'));
+		console.log('fresh');
 	});
 	$(document).on("click","#min_title_list li i",function(){
 		var aCloseIndex=$(this).parents("li").index();
@@ -272,9 +279,10 @@ $(function(){
 
 	/*welcome页面点击导航*/
 	$('.mission-part').on('click','.mission-part-bottom a',Tab_or_layer);
-	$(document).on('click','#query_add_btn',Tab_or_layer);
+	/*车辆抵押认证申请页面query-add.html的申请，做任务功能*/
+	$(document).on('click','.query_btn',Tab_or_layer);
     
-	/*车辆抵押认证申请页面query-add.html功能*/
+	
 
 }); 
 

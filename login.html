@@ -37,13 +37,13 @@
       <div class="row cl">
         <label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-8">
-          <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+          <input id="" name="" type="text" placeholder="账户" v-model="user.userName" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-8">
-          <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+          <input id="" name="" type="password" placeholder="密码" v-model="user.passWord" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
@@ -60,7 +60,7 @@
       </div>
       <div class="row">
         <div class="formControls col-8 col-offset-3">
-          <input name="" type="button" id= "loginBtn"class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input name="" type="button" v-on:click="loginCheck"id= "loginBtn"class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
           <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
         </div>
       </div>
@@ -69,8 +69,27 @@
 </div>
 <div class="footer">Copyright 你的公司名称 by H-ui.admin.v2.3</div>
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/H-ui.js"></script> 
+<script type="text/javascript" src="js/H-ui.js"></script>
+<script type="text/javascript" src="js/vue.js"></script> 
 <script>
+var vm = new Vue(
+{
+  el:'#loginform',
+  data:
+  {
+    user:{}
+  },
+  method:
+  {
+    loginCheck:function(event)
+    {
+
+        sessionStorage.isLogin = 'true';
+        sessionStorage.userName = this.user.userName;
+        location.href = "index.html";
+    }
+  }
+})
 $('#loginBtn').click(function()
 {
     sessionStorage.isLogin = 'true';
